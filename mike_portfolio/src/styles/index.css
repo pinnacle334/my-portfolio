@@ -3,18 +3,15 @@
 
 :root {
   /* COLOR-LIGHT_MODE */
-  --white: #ffffff;
-  --primary-font: #680e1d;
-  --secondary-font: blue;
   --bg-color: #f4f4f9;
   --bg-stripe: #f4f4f7;
-
+  --primary-font: #F43F5E;
+  --secondary-font: #0e0e0f;
+  
   /* COLOR-DARK_MODE */
-  --primary-font-dk: #09011a;
-  --secondary-font-dk: blue;
   --bg-color-dk: #0e0e0f;
   --bg-stripe-dk: #111111;
-
+  --secondary-font-dk: #ffffff;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
@@ -39,5 +36,8 @@ html, body, #root {
   );
 }
 .font-col {
-  
+  color: var(--secondary-font);
+}
+.dark .font-col {
+  color: var(--secondary-font-dk);
 }
