@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* COLOR-LIGHT_MODE */
+  --white: #ffffff;
+  --primary-font: #680e1d;
+  --secondary-font: blue;
+  --bg-color: #f4f4f9;
+  --bg-stripe: #f4f4f7;
+
+  /* COLOR-DARK_MODE */
+  --primary-font-dk: #09011a;
+  --secondary-font-dk: blue;
+  --bg-color-dk: #0e0e0f;
+  --bg-stripe-dk: #111111;
+
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.stripe-bg {
+  background-image: repeating-linear-gradient(
+    to right, var(--bg-color), var(--bg-color) 55px, var(--white) 55px, var(--bg-stripe) 56px 
+  );
+}
+.dark .stripe-bg {
+  background-image: repeating-linear-gradient(
+    to right, var(--bg-color-dk), var(--bg-color-dk) 55px, var(--bg-stripe-dk) 55px, var(--bg-stripe-dk) 56px 
+  );
+}
+.font-col {
+  
+}
