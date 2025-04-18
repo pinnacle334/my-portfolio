@@ -27,7 +27,7 @@ html, body, #root {
 
 .stripe-bg {
   background-image: repeating-linear-gradient(
-    to right, var(--bg-color), var(--bg-color) 55px, var(--white) 55px, var(--bg-stripe) 56px 
+    to right, var(--bg-color), var(--bg-color) 55px, var(--bg-stripe) 55px, var(--bg-stripe) 56px 
   );
 }
 .dark .stripe-bg {
@@ -43,12 +43,12 @@ html, body, #root {
   color: var(--secondary-font-dk);
 }
 
-/* Toggles background color for dark and light themes */
+/* Toggles background color for dark/light themes(NOTE: used for sidebar only) */
 .bg-col {
-  color: var(--bg-color-dk);
+  background-color: var(--bg-color);
 }
 .dark .bg-col {
-  color: var(--bg-color);
+  background-color: var(--bg-color-dk);
 }
 
 /* Toggles button color for dark and light themes */

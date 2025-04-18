@@ -1,5 +1,4 @@
 import { DarkModeBtn } from "./DarkModeBtn"
-// import { Bars3Icon } from '@heroicons/react/24/outline';
 import logo1 from "../assets/icons/logo-wh.svg"
 import logo2 from "../assets/icons/logo-dk.svg"
 import cv from "../assets/certificates/Resume.pdf"
@@ -22,9 +21,8 @@ export const Navbar = () => {
     };
 
     return (
-        <header className="w-full h-10 flex justify-between items-center border-2 border-red-800 border-dashed">
+        <header className="w-full h-10 flex justify-between items-center relative border-2 border-red-800 border-dashed">
             <div className="flex justify-between items-center gap-3">
-                {/* <Bars3Icon className="md:hidden h-6 w-6 text-[var(--primary-font)]" /> */}
                 <HamburgerMenu />
                 {
                 isDark ? <img src={logo2} alt="Logo" className="h-10 w-auto" /> : <img src={logo1} alt="Logo" className="h-10 w-auto" />
