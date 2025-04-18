@@ -21,9 +21,9 @@ export const Navbar = () => {
     };
 
     return (
-        <header className="w-full h-10 flex justify-between items-center relative border-2 border-red-800 border-dashed">
+        <header className="w-full h-10 flex justify-between items-center relative ">
             <div className="flex justify-between items-center gap-3">
-                <HamburgerMenu />
+                <HamburgerMenu className="md:hidden" />
                 {
                 isDark ? <img src={logo2} alt="Logo" className="h-10 w-auto" /> : <img src={logo1} alt="Logo" className="h-10 w-auto" />
                 }
