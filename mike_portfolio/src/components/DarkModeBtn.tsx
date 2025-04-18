@@ -1,22 +1,17 @@
 import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
-import { useState } from 'react';
 
-export const DarkModeBtn = () => {
-    const [ isDark, setIsDark ] = useState(() =>
-        document.documentElement.classList.contains('dark')
-    );
+interface DarkModeProps {
+    isDark: boolean;
+    handleDarkMode: () => void;
+}
 
-    const toggleDarkMode = () => {
-        document.documentElement.classList.toggle("dark");
-        setIsDark(!isDark);
-    };
-
+export const DarkModeBtn = ({ isDark, handleDarkMode }: DarkModeProps) => {
     return (
-        <button onClick={toggleDarkMode}>
+        <button onClick={handleDarkMode}>
         {isDark ? (
             <SunIcon className="h-6 w-6 text-yellow-400" />
         ) : (
-            <MoonIcon className="h-6 w-6 text-gray-800" />
+            <MoonIcon className="h-5 w-5 text-gray-800" />
         )}
         </button>
     );

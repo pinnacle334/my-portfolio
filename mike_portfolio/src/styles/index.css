@@ -2,13 +2,13 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* COLOR-LIGHT_MODE */
+  /* COLOR-LIGHT */
   --bg-color: #f4f4f9;
   --bg-stripe: #f4f4f7;
   --primary-font: #F43F5E;
   --secondary-font: #0e0e0f;
   
-  /* COLOR-DARK_MODE */
+  /* COLOR-DARK */
   --bg-color-dk: #0e0e0f;
   --bg-stripe-dk: #111111;
   --secondary-font-dk: #ffffff;
@@ -35,9 +35,20 @@ html, body, #root {
     to right, var(--bg-color-dk), var(--bg-color-dk) 55px, var(--bg-stripe-dk) 55px, var(--bg-stripe-dk) 56px 
   );
 }
+/* Toggles font color for dark and light themes */
 .font-col {
   color: var(--secondary-font);
 }
 .dark .font-col {
   color: var(--secondary-font-dk);
 }
+
+/* Toggles background color for dark and light themes */
+.bg-col {
+  color: var(--bg-color-dk);
+}
+.dark .bg-col {
+  color: var(--bg-color);
+}
+
+/* Toggles button color for dark and light themes */
