@@ -1,11 +1,8 @@
 import Hero from "./sections/Hero";
 
 function App() {
-  
-  
-
   return (
-    <div className="w-full h-screen stripe-bg px-5 py-2">
+    <div className="w-full h-full stripe-bg px-5 py-2">
       <Hero />
     </div>
   );

@@ -7,7 +7,6 @@ import { useState } from 'react';
 import { Button } from "./Button";
 import { HamburgerMenu } from "./HamburgerMenu";
 
-//WHERE I stopped: Fixing the side bare now not yet done
 export const Navbar = () => {
     const [ isDark, setIsDark ] = useState(() =>
         document.documentElement.classList.contains('dark')
@@ -21,7 +20,7 @@ export const Navbar = () => {
     };
 
     return (
-        <header className="w-full h-10 flex justify-between items-center relative ">
+        <header className="w-full h-10 flex justify-between items-center">
             <div className="flex justify-between items-center gap-3">
                 <HamburgerMenu className="md:hidden" />
                 {

@@ -1,0 +1,21 @@
+// THIS FILE GIVES UPDATE ON WHERE I AM IN THE PROJECT AND WHAT NEEDS TO BE DONE.
+// JUST TO HELP ME KEEP TRACK...
+
+<!-- ACCOMPLISHMENTS -->
+1. Navbar section
+
+
+<!-- IN PROGRESS... -->
+1. Hero section : home page 
+                working on the home page. next is to add the heroIcons
+                then I will do the image
+
+
+<!-- TO BE DONE -->
+1. About page
+2. skills
+3. projects
+4. footer
+
+NB at the end, you will need to animate some stuff
+## the make every section responsive before you proceed
